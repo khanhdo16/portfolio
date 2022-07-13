@@ -17,7 +17,7 @@
 }
 
 .taskbar {
-    display: block;
+    display: flex;
     position: absolute;
     width: 100%;
     height: var(--size-lg);
