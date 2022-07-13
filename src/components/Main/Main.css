@@ -1,0 +1,132 @@
+#main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.content > section#main {
+    height: 120vh;
+}
+
+#main > span {
+    display: block;
+    width: 100%;
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: var(--size-4xl);
+    font-weight: bold;
+    font-style: italic;
+    transition: all 0.5s ease;
+    user-select: none;
+}
+
+#main .main__firstname {
+    text-align: left;
+    transform: var(--transform-firstname);
+    color: var(--accent-color);
+}
+
+#main .main__lastname {
+    text-align: right;
+    transform: var(--transform-lastname);
+    color: var(--accent-color);
+}
+
+#main .main__intro {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: var(--size-xl);
+    font-weight: normal;
+    font-style: normal;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#main .main__intro::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: -5%;
+    width: 0;
+    height: 50%;
+    background: var(--accent-color);
+    z-index: -1;
+    transition: all 0.5s var(--cubic);
+}
+
+#main .main__intro:hover::after {
+    width: 100%
+}
+
+@media only screen and (max-width: 767.9px)   {
+    .content > section#main {
+        height: 110vh;
+    }
+
+    #main > span {
+        font-size: 7rem;
+    }
+
+    #main .main__firstname {
+        transform-origin: top left;
+    }
+
+    #main .main__lastname {
+        transform-origin: bottom right;
+    }
+
+    #main .main__intro {
+        font-size: var(--size-md);
+    }
+
+    #main .main__scroll {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        bottom: var(--size-lg);
+        align-items: center;
+        gap: var(--size-sm);
+        font-size: var(--size);
+        font-style: normal;
+        font-weight: 400;
+        animation: 3s ease-in-out floating infinite;
+    }
+
+    #main .main__scroll svg {
+        fill: #fff;
+        width: var(--size-lg);
+        height: var(--size-lg);
+    }
+
+    @keyframes floating {
+        0%, 100% {
+            transform: translate(0, 0);
+        }
+
+        10%, 50% {
+            transform: translate(0, -10%);
+        }
+
+        30%, 70% {
+            transform: translate(0, 10%);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199.9px) {
+    #main > span {
+        font-size: var(--size-2xl);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199.9px) and (orientation: portrait) {
+    #main .main__intro {
+        font-size: var(--size-lg);
+    }
+}

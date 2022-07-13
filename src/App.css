@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+#app {
+    width: 100%;
+    height: max-content;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#app > .content {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content > section {
+    width: 100%;
+    min-height: calc(100vh - env(safe-area-inset-bottom));
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.taskbar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: var(--size-lg);
+    top: 0;
+    left: 0;
+    background: var(--accent-color);
 }
 
-.App-link {
-  color: #61dafb;
+.taskbar.movable {
+    cursor: move;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskbar-controls {
+    height: 100%;
+    user-select: none;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .content > section {
+        min-height: 1000px;
+    }
 }

@@ -1,0 +1,29 @@
+.section-title {
+    width: 100%;
+    position: relative;
+    margin: var(--size-xl) 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: var(--size-md);
+    font-size: var(--size-title);
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 40%;
+    background: var(--accent-color);
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767.9px)   {
+    .section-title {
+        letter-spacing: var(--size-sm);
+        margin: var(--size-lg) 0;
+    }
+}

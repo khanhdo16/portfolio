@@ -1,0 +1,39 @@
+.content > section#contact {
+    height: max-content;
+    min-height: max-content;
+}
+
+.contact__ctn {
+    padding: var(--size-lg) 0;
+    text-align: center;
+}
+
+.contact__intro, .contact__email {
+    font-size: var(--size-lg);
+}
+
+.contact__intro {
+    margin-bottom: var(--size-lg)
+}
+
+.contact__email {
+    display: inline-block;
+    width: max-content;
+    text-decoration: none;
+    border: 3px solid var(--accent-color);
+    padding: var(--size-sm) var(--size);
+    color: var(--accent-color);
+}
+
+.contact__email:hover {
+    background: #fff;
+}
+
+@media only screen and (max-width: 767.9px)   {
+    .contact__ctn {
+        padding: var(--size-lg);
+    }
+    .contact__intro, .contact__email {
+        font-size: var(--size);
+    }
+}

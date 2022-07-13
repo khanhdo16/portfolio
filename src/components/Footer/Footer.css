@@ -1,0 +1,25 @@
+footer {
+    padding: var(--size-xl) 0 var(--size-lg) 0;
+    text-align: center;
+}
+
+.footer__social-list {
+    display: flex;
+    list-style: none;
+    margin: var(--size-sm) 0;
+    padding: 0;
+    gap: var(--size);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__social-list a > svg {
+    fill: #fff;
+    width: var(--size-lg);
+    height: var(--size-lg);
+    cursor: pointer;
+}
+
+.footer__social-list a > svg:hover {
+    fill: var(--accent-color);
+}
