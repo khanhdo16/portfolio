@@ -28,7 +28,7 @@ export const Projects = () => {
                                 <li>Imgur API</li>
                             </ul>
                             <div className='projects-item__links'>
-                                <a href='https://yphim.khanhdo.dev'><ExternalLink /></a>
+                                <a href='#'><ExternalLink /></a>
                                 <a href='https://github.com/khanhdo16/YPhim'><Github /></a>
                             </div>
                             <p className='project-items__outline'>

@@ -9,7 +9,7 @@ export const Footer = () => {
                 <li><a href='https://github.com/khanhdo16'><Github/></a></li>
                 <li><a href='https://www.linkedin.com/in/khanhdo16/'><LinkedIn /></a></li>
             </ul>
-            <span>Designed by Khanh Do</span>
+            <span>Designed by Kay Do</span>
         </footer>
     )
 }

@@ -36,11 +36,10 @@ export const Main = () => {
         return initValue + (Math.abs(initValue) * (scrollPercentage * multiplier));
     }, [scrollPercentage]);
 
-
     if(isDesktop) {
         return (
             <section id='main'>
-                <span className='main__firstname' style={{'--transform-firstname': `translate(${-1 * adaptedValue(-15, 1.5)}rem, -${adaptedValue(0, 6)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>KHANH</span>
+                <span className='main__firstname' style={{'--transform-firstname': `translate(${-1 * adaptedValue(-15, 1.5)}rem, -${adaptedValue(0, 6)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>KAY</span>
                 <span className='main__lastname' style={{'--transform-lastname': `translate(${adaptedValue(-15, 1.5)}rem, ${adaptedValue(0, 6)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>DO</span>
                 <span className='main__intro' style={{opacity: scrollPercentage === 1 ? 1 : 0}}>stunning webs are my things</span>
             </section>
@@ -50,8 +49,8 @@ export const Main = () => {
     if(isTablet) {
         return (
             <section id='main'>
-                <span className='main__firstname' style={{'--transform-firstname': `translate(${-1 * adaptedValue(-10, 1.5)}rem, -${adaptedValue(0, 6)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>KHANH</span>
-                <span className='main__lastname' style={{'--transform-lastname': `translate(${adaptedValue(-10, 1.5)}rem, ${adaptedValue(0, 6)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>DO</span>
+                <span className='main__firstname' style={{'--transform-firstname': `translate(${-1 * adaptedValue(-10, 1.5)}rem, -${adaptedValue(0, 4)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>KAY</span>
+                <span className='main__lastname' style={{'--transform-lastname': `translate(${adaptedValue(-10, 1.5)}rem, ${adaptedValue(0, 4)}rem) scale(${scrollPercentage === 1 ? 0.8 : 1})`}}>DO</span>
                 <span className='main__intro' style={{opacity: scrollPercentage === 1 ? 1 : 0}}>stunning webs are my things</span>
             </section>
         )
@@ -59,8 +58,8 @@ export const Main = () => {
 
     return (
         <section id='main'>
-            <span className='main__firstname' style={{'--transform-firstname': `translate(0, ${scrollPercentage === 1 ? -1 * adaptedValue(0, 2) : 25}rem) scale(${scrollPercentage === 1 ? 1 : 1.3}) rotate(${scrollPercentage === 1 ? '0' : '-90deg'})`}}>KHANH</span>
-            <span className='main__lastname' style={{'--transform-lastname': `translate(0, ${scrollPercentage === 1 ? adaptedValue(0, 2) : -30}rem) scale(${scrollPercentage === 1 ? 1 : 1.3}) rotate(${scrollPercentage === 1 ? '0' : '-90deg'})`}}>DO</span>
+            <span className='main__firstname' style={{'--transform-firstname': `translate(0, ${scrollPercentage === 1 ? -1 * adaptedValue(0, 2) : 22.5}rem) scale(${scrollPercentage === 1 ? 1 : 1.3}) rotate(${scrollPercentage === 1 ? '0' : '-90deg'})`}}>KAY</span>
+            <span className='main__lastname' style={{'--transform-lastname': `translate(0, ${scrollPercentage === 1 ? adaptedValue(0, 2) : -27.5}rem) scale(${scrollPercentage === 1 ? 1 : 1.3}) rotate(${scrollPercentage === 1 ? '0' : '-90deg'})`}}>DO</span>
             <span className='main__intro' style={{opacity: scrollPercentage === 1 ? 1 : 0}}>stunning webs are my things</span>
             <span className='main__scroll'>SCROLL DOWN <Scroll /></span>
         </section>
