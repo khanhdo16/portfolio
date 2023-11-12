@@ -24,6 +24,7 @@
     top: 0;
     left: 0;
     background: var(--accent-color);
+    align-items: center;
 }
 
 .taskbar.movable {

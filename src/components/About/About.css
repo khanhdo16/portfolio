@@ -49,6 +49,13 @@
     user-select: none;
 }
 
+.about__text .taskbar.movable > .taskbar__title {
+    font-size: 0.5em;
+    line-height: 0;
+    margin-right: 45%;
+    margin-left: auto;
+}
+
 .about__img-ctn {
     position: relative;
     width: 20%;
@@ -103,6 +110,10 @@
         font-size: var(--size)
     }
 
+    .about__text .taskbar.movable > .taskbar__title {
+        display: none;
+    }
+
     .about__img-ctn {
         width: 60%;
     }
@@ -117,6 +128,10 @@
     .about__text {
         width: 60%;
         font-size: var(--size-md)
+    }
+
+    .about__text .taskbar.movable > .taskbar__title {
+        display: none;
     }
 }
 
