@@ -51,7 +51,7 @@ export const About = () => {
                     <div className='taskbar movable' onMouseDown={onMouseDown}>
                         <img className='taskbar-controls' src='/img/controls.svg' alt='' />
                     </div>
-                    <p>Hi, my name is Kay, but people usually call me Kay. I've always been interested in making webs that work great and look good. Starting by customizing WordPress sites for my relatives, I've progressed a lot since college and throughout projects that I've built.</p>
+                    <p>Hi, my name is Kay. I've always been interested in making webs that work great and look good. Starting by customizing WordPress sites for my relatives, I've progressed a lot since college and throughout projects that I've built.</p>
                     <p>I've had a chance to take an internship at Deakin eSolutions. The job taught me a lot about the career I'm going to take. I find no limits in my technology stack, and I love to evolve my skills as technology grows.</p>
                 </div>
                 <div className='about__img-ctn'>
